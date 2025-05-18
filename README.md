@@ -1,7 +1,14 @@
-ANA SAYFA
-![image](https://github.com/user-attachments/assets/6473a313-9b92-4f8c-9b36-3d4a7d0d30b0)
-KOMEDİ KATEGORİSİ
-![image](https://github.com/user-attachments/assets/d8571029-d163-49dc-8851-f1c9b9fad1cf)
-AŞK KATEGORİSİ
-![Uploading image.png…]()
 
+![image](https://github.com/user-attachments/assets/6473a313-9b92-4f8c-9b36-3d4a7d0d30b0)
+
+![image](https://github.com/user-attachments/assets/d8571029-d163-49dc-8851-f1c9b9fad1cf)
+
+![image](https://github.com/user-attachments/assets/7782ecc2-d214-4883-a665-19ad71a7f46e)
+
+![image](https://github.com/user-attachments/assets/a3efb606-02dd-43af-b107-2259b78d1563)
+
+![image](https://github.com/user-attachments/assets/b1436f37-5a75-4316-bdfd-e38842c30035)
+
+![image](https://github.com/user-attachments/assets/afbb87ba-abb7-4a19-aec5-ac00b866e0de)
+
+![image](https://github.com/user-attachments/assets/321c75ff-fb22-4043-8deb-eacfcb4e7656)

@@ -1,0 +1,3 @@
+mdizi.netlify.app
+
+ile google dan girilebilcek herkese açık site

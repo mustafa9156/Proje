@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dizi Platformu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="logo">mDizi</div>
+            <nav>
+                <ul>
+                    <li><a href="filmler/kategori/komedi/komedi.html">🎭 Komedi</a></li>
+                    <li><a href="filmler/kategori/Aşk/aşk.html">❤️ Aşk</a></li>
+                    <li><a href="filmler/kategori/korku/korku.html">👻 Korku</a></li>
+                    <li><a href="filmler/kategori/aksiyon/aksiyon.html">🔫 Aksiyon</a></li>
+                    <li><a href="filmler/kategori/dram/dram.html">💔 Dram</a></li>
+                    <li><a href="filmler/kategori/bilim kurgu/bilim.html">🛸 Bilim Kurgu</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Önerilen Film & Diziler</h1>
+                <div class="kullanici-panel">
+                    <a href="kütüphanem.html" class="kutuphane-link">📚 Kütüphanem</a>
+                </div>
+            </header>
+
+            
+
+            <section class="dizi-grid">
+                <div class="dizi-card">
+                    <div class="kalp-btn"  data-ad="Peaky Blinders" onclick='kalpTiklandi(this, {
+                        ad: "Peaky Blinders",
+                        resim: "filmler/images/21045721_20131001172258551 (1).jpg",
+                        kategori: "Drama",
+                        link: "filmler/kategori/dram/peaky.html"
+                    })'>🤍</div>
+                    
+                    <a href="filmler/kategori/dram/peaky.html">
+                        <img src="filmler/images/21045721_20131001172258551 (1).jpg" alt="Peaky">
+                        <div class="dizi-info">
+                            <h3>Peaky Blinders</h3>
+                            <p>Drama</p>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                <div class="dizi-card">
+                    <div class="kalp-btn" data-ad="Stranger Things" onclick='kalpTiklandi(this, {
+                        ad: "Stranger Things",
+                        resim: "filmler/images/sezon-1.jpg",
+                        kategori: "Korku / Bilim Kurgu",
+                        link: "filmler/kategori/korku/stranger.html"
+                    })'>🤍</div>
+
+                    <a href="filmler/kategori/korku/stranger.html">
+                        <img src="filmler/images/sezon-1.jpg" alt="Stranger">
+                    <div class="dizi-info">
+                        <h3>Stranger Things</h3>
+                        <p>Korku / Bilim Kurgu</p>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="dizi-card">
+                    <a href="filmler/kategori/aksiyon/esref.html">
+                        <img src="filmler/images/qqqqqqqqqqqqqqqqq.jpg" alt="Eşref Rüya">
+                    <div class="dizi-info">
+                        <h3>Eşref Rüya</h3>
+                        <p>Aksiyon / Drama / Komedi</p>
+                    </div>
+                    </a>    
+                </div>
+
+                <div class="dizi-card">
+                    <a href="filmler/kategori/komedi/genisaile.html">
+                        <img src="filmler/images/MV5BOGE0ZTQ2NGQtMDQ3My00Mzc0LThmYjItNjRjZjQyMDA3OWMzXkEyXkFqcGc@._V1_.jpg" alt="Geniş Aile">
+                    <div class="dizi-info">
+                        <h3>Geniş Aile</h3>
+                        <p>Komedi</p>
+                    </div>
+                    </a>    
+                </div>
+
+                <div class="dizi-card">
+                    <a href="filmler/kategori/Aşk/thisisus.html">
+                        <img src="filmler/images/this-is-us.jpg" alt="This is Us">
+                    <div class="dizi-info">
+                        <h3>This is Us</h3>
+                        <p>Aşk / Drama</p>
+                    </div>
+                    </a>    
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        function kalpTiklandi(element, diziObjesi) {
+            let favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+
+            // Favorilerde aynı dizi varsa kaldır, yoksa ekle
+            const index = favoriler.findIndex(fav => fav.ad === diziObjesi.ad);
+            if (index !== -1) {
+                favoriler.splice(index, 1);
+                element.style.color = "black";
+                element.textContent = "🤍";
+            } else {
+                favoriler.push(diziObjesi);
+                element.style.color = "red";
+                element.textContent = "❤️";
+            }
+
+            localStorage.setItem("favoriler", JSON.stringify(favoriler));
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+            document.querySelectorAll(".kalp-btn").forEach(el => {
+
+                const diziAdi = el.getAttribute("data-ad");
+                if (favoriler.find(fav => fav.ad === diziAdi)) {
+                    el.style.color = "red";
+                    el.textContent = "❤️";
+                } else {
+                    el.style.color = "black";
+                    el.textContent = "🤍";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

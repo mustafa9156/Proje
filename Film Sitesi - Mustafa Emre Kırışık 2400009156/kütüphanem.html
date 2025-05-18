@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kütüphanem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">mDizi</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">🏠 Ana Sayfa</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Kütüphanem</h1>
+            </header>
+
+            <section class="dizi-grid" id="kutuphaneGrid">
+                <!-- JavaScript ile dolacak -->
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function kalpTiklandi(element, diziObjesi) {
+            let favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+
+            const index = favoriler.findIndex(fav => fav.ad === diziObjesi.ad);
+            if (index !== -1) {
+                // Favorilerden çıkar
+                favoriler.splice(index, 1);
+                element.style.color = "black";
+                element.textContent = "🤍";
+                // Kartı kaldırmak istersen burada da kaldırabilirsin:
+                element.parentElement.remove();
+            } else {
+                // Favorilere ekle
+                favoriler.push(diziObjesi);
+                element.style.color = "red";
+                element.textContent = "❤️";
+            }
+
+            localStorage.setItem("favoriler", JSON.stringify(favoriler));
+        }
+
+        const favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+        const grid = document.getElementById("kutuphaneGrid");
+
+        if (favoriler.length === 0) {
+            grid.innerHTML = "<p>Henüz hiçbir içerik eklenmemiş.</p>";
+        } else {
+            grid.innerHTML = ""; // Önce temizle
+            favoriler.forEach(dizi => {
+                const card = document.createElement("div");
+                card.className = "dizi-card";
+                card.innerHTML = `
+                    <div class="kalp-btn" 
+                        style="color: red; cursor:pointer;" 
+                        onclick='kalpTiklandi(this, {
+                            ad: "${dizi.ad}",
+                            resim: "${dizi.resim}",
+                            kategori: "${dizi.kategori}",
+                            link: "${dizi.link}"
+                        })'>❤️</div>
+                    <a href="${dizi.link}">
+                        <img src="${dizi.resim}" alt="${dizi.ad}">
+                        <div class="dizi-info">
+                            <h3>${dizi.ad}</h3>
+                            <p>${dizi.kategori}</p>
+                        </div>
+                    </a>
+                `;
+                grid.appendChild(card);
+            });
+        }
+    </script>
+    
+</body>
+</html>

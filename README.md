@@ -1,3 +1,4 @@
+FİLM & DİZİ SİTESİ ANA SAYFA
 
 ![image](https://github.com/user-attachments/assets/6473a313-9b92-4f8c-9b36-3d4a7d0d30b0)
 
@@ -24,6 +25,8 @@ DRAM
 BİLİM KURGU
 
 ![image](https://github.com/user-attachments/assets/afbb87ba-abb7-4a19-aec5-ac00b866e0de)
+
+BİLİM KURGU
 
 ![image](https://github.com/user-attachments/assets/321c75ff-fb22-4043-8deb-eacfcb4e7656)
 

@@ -5,8 +5,11 @@ KÜTÜPHANE SİSTEMİ İLE BEĞENDİĞİNİZ DİZİ VE FİLMLERİ KÜTÜPHANENİ
 
 ![image](https://github.com/user-attachments/assets/ffe89e46-b73d-449a-86d6-a1652d653ecd)
 
+KOMEDİ
 
 ![image](https://github.com/user-attachments/assets/d8571029-d163-49dc-8851-f1c9b9fad1cf)
+
+AŞK
 
 ![image](https://github.com/user-attachments/assets/7782ecc2-d214-4883-a665-19ad71a7f46e)
 

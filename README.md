@@ -14,15 +14,15 @@ AŞK
 
 ![image](https://github.com/user-attachments/assets/7782ecc2-d214-4883-a665-19ad71a7f46e)
 
-AKSİYON
+KORKU
 
 ![image](https://github.com/user-attachments/assets/a3efb606-02dd-43af-b107-2259b78d1563)
 
-DRAM
+AKSİYON
 
 ![image](https://github.com/user-attachments/assets/b1436f37-5a75-4316-bdfd-e38842c30035)
 
-BİLİM KURGU
+DRAM
 
 ![image](https://github.com/user-attachments/assets/afbb87ba-abb7-4a19-aec5-ac00b866e0de)
 

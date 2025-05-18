@@ -1,6 +1,11 @@
 
 ![image](https://github.com/user-attachments/assets/6473a313-9b92-4f8c-9b36-3d4a7d0d30b0)
 
+KÜTÜPHANE SİSTEMİ İLE BEĞENDİĞİNİZ DİZİ VE FİLMLERİ KÜTÜPHANENİZE EKLEYEBİLİRSİNİZ
+
+![image](https://github.com/user-attachments/assets/ffe89e46-b73d-449a-86d6-a1652d653ecd)
+
+
 ![image](https://github.com/user-attachments/assets/d8571029-d163-49dc-8851-f1c9b9fad1cf)
 
 ![image](https://github.com/user-attachments/assets/7782ecc2-d214-4883-a665-19ad71a7f46e)
